@@ -38,6 +38,6 @@ if response.status_code == 200:
     df = pd.DataFrame({'Text Data': justified_text_data})
     df.to_csv('justified_op.csv', index=True)
 
-    print("Data has been scraped and saved to 'output.xlsx'")
+    print("Data has been scraped and saved to 'justified_op.csv'")
 else:
     print(f"Failed to retrieve the page. Status code: {response.status_code}")
